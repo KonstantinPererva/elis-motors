@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/jquery-ui.css" rel="stylesheet">
+  <link href="css/jquery-ui.structure.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+<!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-15">
+            <div class="row">
+              <div class="col-lg-3 col-sm-3 col-xs-5">
+                <div class="logo">
+                  <img src="images/logo.png" alt="Logo" class="img-responsive">
+                </div>
+              </div>
+              <div class="col-sm-1 hidden-lg hidden-xs"></div>
+              <div class="col-lg-12 col-sm-9 col-xs-5 header-content">
+                <div class="row">
+                  <div class="col-lg-8 col-xs-15">
+                    <div class="search-big hidden-lg hidden-md hidden-sm">
+                      <a href="#"><i class="search-icn pull-right"></i></a>
+                    </div>
+                    <form action="!" method="post" class="search" id="search">
+                      <input type="search" name="search" class="input" placeholder="Поиск более чем по 20 000 запчастей">
+                      <input type="submit" name="submit" value="" class="submit"></form>
+                  </div>
+                  <div class="col-lg-7 col-md-15 hidden-sm hidden-xs">
+                    <address class="address-header">
+                      <p class="phone">
+                        <span class="tel">+7 (423) 293-78-78</span>
+                        <a href="#" class="call-back">Перезвоните мне</a>
+                      </p>
+                      <p class="location">г. Владивосток, район «Снеговая», ул. Карьерная, 10А</p>
+                    </address>
+                  </div>
+                  <div class="col-lg-15 wr-header-nav">
+                  	<a href="#" class="btn-close hidden-lg hidden-xs">
+                  		<i class="icn close-header-nav"></i>
+                  	</a>
+                    <nav class="header-nav">
+                      <ul class="list-unstyled list-inline">
+                        <li>
+                          <a href="company.html">О компании</a>
+                        </li>
+                        <li>
+                          <a href="#">ОЕМ запчасти</a>
+                        </li>
+                        <li>
+                          <a href="#">Мотосервис</a>
+                        </li>
+                        <li>
+                          <a href="#">Ваши объявления</a>
+                        </li>
+                        <li>
+                          <a href="#">Оплата и доставка</a>
+                        </li>
+                        <li>
+                          <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-uppercase">
+                            <span class="h-nav-btn">Оптовые продажи</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden-lg col-sm-2 col-xs-5">
+                <div class="btn-menu-header pull-right">
+                  <a href="#">
+                    <i class="icn menu"></i>
+                  </a>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+<!-- NAV -->
+    <nav class="nav ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-15 text-center wr-menu">
+            <div class="row">
+              <div class="col-lg-4 col-lg-push-11">
+                <div class="menu-right text-right">
+                  <a href="#" class="entrance"><i class="icn client"></i></a>
+                  <a href="#" class="basket-goods text-center"><i class="icn cart"></i>Корзина товаров</a>
+                </div>
+              </div>
+              <div class="col-lg-11 col-lg-pull-4">
+                <div class="menu-left">
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <a href="#" class="line">Запчасти</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line">Расходники</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line">Масла</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line">Шины</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line">Диски</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line">Гусеницы</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line">Экипировка</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="selection">
+      <div class="selection-top text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-15 hidden-sm hidden-xs">
+              <ul class="list-inline list-unstyled">
+                <li><a href="#" class="line-white"><i class="icn atv"></i>Квадроциклы</a></li>
+                <li><a href="#" class="line-white"><i class="icn motorbike"></i>Мотоциклы</a></li>
+                <li><a href="#"><i class="icn snowmobile"></i>Снегоходы</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="selection-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-15">
+              <h2 class="text-center">Подбор запчастей по модели:</h2>
+              <form action="#" method="get" id="form-selection" class="text-center">
+                <fieldset>
+                  <select name="type" id="typeOfMotorcycles">
+                    <option disabled selected>Тип мототехники</option>
+                    <option>Квадроциклы</option>
+                    <option>Мотоциклы</option>
+                    <option>Снегоходы</option>
+                  </select>
+                  <select name="year" id="productionYear">
+                    <option disabled selected>Год пр-ва</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                  </select>
+                  <select name="manufacturer" id="manufacturer">
+                    <option disabled selected>Производитель</option>
+                    <option>Квадроциклы</option>
+                    <option>Мотоциклы</option>
+                    <option>Снегоходы</option>
+                  </select>
+                  <select name="model" id="model">
+                    <option disabled selected>Модель</option>
+                    <option>Квадроциклы</option>
+                    <option>Мотоциклы</option>
+                    <option>Снегоходы</option>
+                  </select>
+                </fieldset>
+                <input type="submit" name="selection" value="Подобрать" class="text-uppercase">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- MAIN -->
+    <main>
+      <div class="container hidden-xs">
+        <div class="row">
+          <div class="col-lg-15">
+            <h1 class="text-uppercase text-center">
+              Запчасти и аксессуары
+            </h1>
+            <small class="text-center descr">для квадроциклов, мотоциклов и снегоходов</small>
+          </div>
+        </div>
+      </div>
+<!-- SECTION 1 -->
+      <section class="section-1 section-goods">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-15">
+              <div class="row">
+                <div class="col-lg-7 col-md-8 col-xs-15">
+                  <h2 class="text-uppercase text-white">Расходники</h2>
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn spark-plug"></i></span>Свечи</a>
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn air-filter"></i></span>Фильтры</a>
+                    </div>
+                    <div class="col-xs-8">
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn brake-pads"></i></span>Тормозные колодки</a>
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn battery"></i></span>Аккумуляторы</a>
+                    </div>
+                    <div class="col-xs-15">
+                      <a href="#" class="view-all-gray">Посмотреть все</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-md-offset-1 col-md-6 hidden-sm hidden-xs data-goods">
+                  <h3><a href="#" class="name-goods">Фильтр масляный KN-204</a></h3>
+                  <p class="price">715 р.</p>
+                  <div class="col-xs-15">
+                    <img src="images/page-index/filter.png" alt="Фильтр" class="img-responsive img-goods">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- SECTION 2 -->
+      <section class="section-2 section-goods">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-15">
+              <div class="row">
+                <div class="col-lg-7 col-md-6 hidden-sm hidden-xs data-goods">
+                  <div class="row">
+                    <div class="col-lg-9 col-lg-offset-6 wr-name-goods">
+                      <h3><a href="#" class="name-goods">Масло XPS 293600115</a></h3>
+                      <p class="price">4100 р.</p>
+                    </div>
+                    <div class="col-xs-15">
+                      <img src="images/page-index/oil.png" alt="Масло" class="img-responsive img-goods">
+                    </div>               
+                  </div>
+                </div>
+                <div class="col-lg-7 col-md-offset-1 col-md-8 col-xs-15">
+                  <h2 class="text-uppercase">Масла и смазки</h2>
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <a href="#" class="consumables"><i class="icn transmission"></i>Трансмиссионное</a>
+                      <a href="#" class="consumables"><i class="icn lubricant"></i>Смазка</a>
+                    </div>
+                    <div class="col-xs-8">
+                      <a href="#" class="consumables"><i class="icn motor"></i>Моторное</a>
+                      <a href="#" class="consumables"><i class="icn antifreeze"></i>Антифриз</a>
+                    </div>
+                    <div class="col-xs-15">
+                      <a href="#" class="view-all-gray">Посмотреть все</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- SECTION 3 -->
+      <section class="section-3 section-goods">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-15">
+              <div class="row">
+                <div class="col-lg-7 col-md-8 col-xs-15">
+                  <h2 class="text-uppercase text-white">Шины</h2>
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn atv-white"></i></span>Квадроциклы</a>
+                    </div>
+                    <div class="col-xs-8">
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn motorbike-white"></i></span>Мототехника</a>
+                    </div>
+                    <div class="col-xs-15">
+                      <a href="#" class="view-all-orange">Посмотреть все</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-md-offset-1 col-md-6 hidden-sm hidden-xs data-goods">
+                  <div class="wr-name-goods">
+                    <h3><a href="#" class="name-goods">CST Wild Thang</a></h3>
+                    <p class="price">5 800 р.</p>
+                  </div>
+                  <div class="col-xs-15">
+                    <img src="images/page-index/tires.png" alt="Шины" class="img-responsive img-goods">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- SECTION 4 -->
+      <section class="section-4 section-goods">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-15">
+              <div class="row">
+                <div class="col-lg-7 col-md-6 hidden-sm hidden-xs data-goods">
+                  <div class="row">
+                    <div class="col-lg-9 col-lg-offset-6 wr-name-goods">
+                      <h3><a href="#" class="name-goods">Диск «ITP SS316»</a></h3>
+                      <p class="price">5 700 р.</p>
+                    </div>
+                    <div class="col-xs-15">
+                      <img src="images/page-index/disk.png" alt="Диск" class="img-responsive img-goods">
+                    </div>             
+                  </div>
+                </div>
+                <div class="col-lg-7 col-md-offset-1 col-md-8 col-xs-15 disk-atv">
+                  <h2 class="text-uppercase">Диски</h2>
+                  <h3 class="text-uppercase">для квадроциклов</h3>
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <a href="#" class="consumables"><i class="icn atv-gray"></i>Квадроциклы</a>
+                    </div>
+                    <div class="col-xs-15">
+                      <a href="#" class="view-all-gray">Посмотреть все</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+<!-- SECTION 5 -->
+      <section class="section-5 section-goods">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-15">
+              <div class="row">
+                <div class="col-lg-7 col-md-8 col-xs-15">
+                  <h2 class="text-uppercase text-white">Гусеницы</h2>
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn atv-white"></i></span>Квадроциклы</a>
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn snowmobile-white"></i></span>Снегоходы</a>
+                    </div>
+                    <div class="col-xs-8">
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn motorbike-white"></i></span>Мотоциклы</a>
+                    </div>
+                    <div class="col-xs-15">
+                      <a href="#" class="view-all-orange">Посмотреть все</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-md-offset-1 col-md-6 hidden-sm hidden-xs data-goods">
+                  <h3><a href="#" class="name-goods">Гусеницы «Camoplast Tatou»</a></h3>
+                  <p class="price">280 000 р.</p>
+                  <div class="col-xs-15">
+                    <img src="images/page-index/caterpillar.png" alt="Гусеницы" class="img-responsive img-goods">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- SECTION 6 -->
+      <section class="section-6 section-goods">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-15">
+              <div class="row">
+                <div class="col-lg-7 col-md-6 hidden-sm hidden-xs data-goods">
+                  <div class="row">
+                    <div class="col-lg-9 col-lg-offset-6 wr-name-goods">
+                      <h3><a href="#" class="name-goods">Лебедка Warn 3000-S 31 000 р.</a></h3>
+                      <p class="price">31 000 р.</p>
+                    </div>
+                    <div class="col-xs-15">
+                      <img src="images/page-index/winch.png" alt="Лебедка" class="img-responsive img-goods">
+                    </div>    
+                  </div>
+                </div>
+                <div class="col-lg-7 col-md-offset-1 col-md-8 col-xs-15">
+                  <h2 class="text-uppercase">Аксессуары</h2>
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn atv-gray"></i></span>Квадроциклы</a>
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn snowmobile-gray"></i></span>Снегоходы</a>
+                    </div>
+                    <div class="col-xs-8">
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn motorbike-gray"></i></span>Мотоциклы</a>
+                    </div>
+                    <div class="col-xs-15">
+                      <a href="#" class="view-all-gray">Посмотреть все</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- SECTION 7 -->
+       <section class="section-7 section-goods">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-15">
+              <div class="row">
+                <div class="col-lg-7 col-md-8 col-xs-15">
+                  <h2 class="text-uppercase text-white">Экипировка</h2>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn accessory-helmets"></i></span>Шлемы</a>
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn accessory-gloves"></i></span>Перчатки</a>
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn accessory-glasses"></i></span>Очки</a>
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn accessory-clothes"></i></span>Одежда</a>
+                    </div>
+                    <div class="col-xs-9">
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn accessory-boots"></i></span>Мотоботы</a>
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn accessory-backpack"></i></span>Рюкзаки</a>
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn accessory-cap"></i></span>Кепки</a>
+                      <a href="#" class="consumables"><span class="wr-i"><i class="icn accessory-body-protection"></i></span>Защита тела</a>
+                    </div>
+                    <div class="col-xs-15">
+                      <a href="#" class="view-all-orange">Посмотреть все</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-md-offset-1 col-md-6 hidden-sm hidden-xs data-goods">
+                  <div class="wr-name-goods">
+                    <h3><a href="#" class="name-goods">Шлем Fly Kinetic Block Out</a></h3>
+                    <p class="price">5 200 р.</p>
+                  </div>
+                  <div class="col-xs-15">
+                    <img src="images/page-index/helmet.png" alt="Экипировка" class="img-responsive img-goods">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-15 hidden-sm hidden-xs">
+              <div class="row">
+                <div class="col-lg-6 col-md-7">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                      <img src="images/logo-small.png" alt="logo" class="logo-footer">
+                    </div>
+                    <div class="col-lg-12 col-md-11">
+                      <h2>Запчасти и аксессуары для мотоциклов, квадроциклов и снегоходов</h2> 
+                    </div>
+                    <div class="col-md-15">
+                      Наша компания оказывает полный спектр услуг по техническому обслуживанию мотоциклов, квадрациклов, снегоходов и гидроциклов. Мы предоставляем услуги по восстановлению работоспособности любого агрегата, в частности надёжные ремонтные работы капитального характера, возобновление полноценной работы топливной системы и электрооборудования, покраска и выполнение замены расходных материалов. 
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-4">
+                  <ul class="list-unstyled footer-menu footer-menu-left">
+                    <li>Покупателям:</li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Оптовые продажи</a></li>
+                    <li><a href="#">Сервисный центр</a></li>
+                    <li><a href="#">ОЕМ запчасти</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="list-unstyled footer-menu footer-menu-right">
+                    <li>Каталог продукции:</li>
+                    <li><a href="#">Запчасти</a></li>
+                    <li><a href="#">Расходники и масла</a></li>
+                    <li><a href="#">Экипировка</a></li>
+                    <li><a href="#">Аксессуары</a></li>
+                    <li><a href="#">Шины и диски</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-15 hidden-lg hidden-md">
+              <address class="address-footer">
+                <p class="phone">
+                  <span class="tel">+7 (423) 293-78-78</span>
+                  <a href="#" class="call-back">Перезвоните мне</a>
+                </p>
+                <p class="location">г. Владивосток, район «Снеговая», ул. Карьерная, 10А</p>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        2016  © «Elis Motors»
+      </div>
+    </footer>
+    
+  </div>
+<!-- SCRIPT -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

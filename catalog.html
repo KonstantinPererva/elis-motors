@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/jquery-ui.css" rel="stylesheet">
+  <link href="css/jquery-ui.structure.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+<!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-15">
+            <div class="row">
+              <div class="col-lg-3 col-sm-3 col-xs-5">
+                <div class="logo">
+                  <img src="images/logo.png" alt="Logo" class="img-responsive">
+                </div>
+              </div>
+              <div class="col-sm-1 hidden-lg hidden-xs"></div>
+              <div class="col-lg-12 col-sm-9 col-xs-5 header-content">
+                <div class="row">
+                  <div class="col-lg-8 col-xs-15">
+                    <div class="search-big hidden-lg hidden-md hidden-sm">
+                      <a href="#"><i class="search-icn pull-right"></i></a>
+                    </div>
+                    <form action="!" method="post" class="search" id="search">
+                      <input type="search" name="search" class="input" placeholder="Поиск более чем по 20 000 запчастей">
+                      <input type="submit" name="submit" value="" class="submit"></form>
+                  </div>
+                  <div class="col-lg-7 col-md-15 hidden-sm hidden-xs">
+                    <address class="address-header">
+                      <p class="phone">
+                        <span class="tel">+7 (423) 293-78-78</span>
+                        <a href="#" class="call-back">Перезвоните мне</a>
+                      </p>
+                      <p class="location">г. Владивосток, район «Снеговая», ул. Карьерная, 10А</p>
+                    </address>
+                  </div>
+                  <div class="col-lg-15 wr-header-nav">
+                    <a href="#" class="btn-close hidden-lg hidden-xs">
+                      <i class="icn close-header-nav"></i>
+                    </a>
+                    <nav class="header-nav">
+                      <ul class="list-unstyled list-inline">
+                        <li>
+                          <a href="company.html">О компании</a>
+                        </li>
+                        <li>
+                          <a href="#">ОЕМ запчасти</a>
+                        </li>
+                        <li>
+                          <a href="#">Мотосервис</a>
+                        </li>
+                        <li>
+                          <a href="#">Ваши объявления</a>
+                        </li>
+                        <li>
+                          <a href="#">Оплата и доставка</a>
+                        </li>
+                        <li>
+                          <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-uppercase">
+                            <span class="h-nav-btn">Оптовые продажи</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden-lg col-sm-2 col-xs-5">
+                <div class="btn-menu-header pull-right">
+                  <a href="#">
+                    <i class="icn menu"></i>
+                  </a>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+<!-- NAV -->
+    <nav class="nav ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-15 text-center wr-menu">
+            <div class="row">
+              <div class="col-lg-4 col-lg-push-11">
+                <div class="menu-right text-right">
+                  <a href="#" class="entrance"><i class="icn client"></i></a>
+                  <a href="#" class="basket-goods text-center"><i class="icn cart"></i>Корзина товаров</a>
+                </div>
+              </div>
+              <div class="col-lg-11 col-lg-pull-4 hidden-xs">
+                <div class="menu-left">
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <a href="#" class="line">Запчасти</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line">Расходники</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line active">Масла</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line">Шины</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line">Диски</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line">Аксессуары</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line">Гусеницы</a>
+                    </li>
+                    <li>
+                      <a href="#" class="line">Экипировка</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="visible-xs menu-catalog-xs">
+      <div class="menu-left">
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" class="text-uppercase text-center toggleSlide">Масла<i class="icn arrow-menu"></i></a>
+            <ul class="list-unstyled list-slide">
+              <li>
+                <a href="#" class="text-uppercase text-center">Запчасти</a>
+              </li>
+              <li>
+                <a href="#" class="text-uppercase text-center">Расходники</a>
+              </li>
+              <li>
+                <a href="#" class="text-uppercase text-center">Шины</a>
+              </li>
+              <li>
+                <a href="#" class="text-uppercase text-center">Диски</a>
+              </li>
+              <li>
+                <a href="#" class="text-uppercase text-center">Аксессуары</a>
+              </li>
+              <li>
+                <a href="#" class="text-uppercase text-center">Гусеницы</a>
+              </li>
+              <li>
+                <a href="#" class="text-uppercase text-center">Экипировка</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!-- MAIN -->
+    <main>
+      <div class="pick">
+        <div class="wr-sel-catalog bg-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-15 hidden-xs">
+                <ul class="list-inline list-unstyled list-pick">
+                  <li><a href="#" class="sel-catalog line-gray"><i class="icn atv"></i>Квадроциклы</a></li>
+                  <li><a href="#" class="sel-catalog line-gray"><i class="icn motorbike"></i>Мотоциклы</a></li>
+                  <li><a href="#" class="sel-catalog"><i class="icn snowmobile"></i>Снегоходы</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row selection-catalog">
+            <div class="col-sm-15 hidden-xs">
+              <p class="pointer">Масла и смазки / <strong>Квадроциклы</strong></p>
+            </div>
+            <div class="col-sm-15 hidden-xs">
+              <ul class="list-inline list-unstyled list-sel-oil">
+                <li><a href="#"><i class="icn motor"></i>Моторное масло</a></li>
+                <li><a href="#" class="line-lightgray"><i class="icn transmission"></i>Трансмиссионное масло</a></li>
+                <li><a href="#" class="line-lightgray"><i class="icn lubricant"></i>Смазки</a></li>
+                <li><a href="#" class="line-lightgray"><i class="icn antifreeze"></i>Антифриз</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-15">
+              <div class="row">
+                <div class="col-xs-15 hidden-lg hidden-md hidden-sm">
+                  <form action="!" method="get" id="form-sel-catalog">
+                     <fieldset>
+                      <select name="type" id="selMotorcycles">
+                        <option selected>Квадроциклы</option>
+                        <option>Мотоциклы</option>
+                        <option>Снегоходы</option>
+                      </select>
+                      <select name="year" id="productionOil">
+                        <option selected>Моторное масло</option>
+                        <option>Трансмиссионное масло</option>
+                        <option>Смазки</option>
+                        <option>Антифриз</option>
+                      </select>
+                    </fieldset>
+                  </form>
+                  <div class="btn-addFilter">Дополнительный фильтр</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                  <form action="!" method="get" id="filterCatalog" class="filter-catalog">
+                    <div class="characteristics">
+                      <p>Характеристики:</p>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-1">
+                        <label for="in-1">Синтетическое</label>
+                      </div>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-2">
+                        <label for="in-2">Полусинтетическое</label>
+                      </div>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-3">
+                        <label for="in-3">Минеральное</label>
+                      </div>
+                    </div>
+                    <div class="producer">
+                      <p>Производители:</p>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-4">
+                        <label for="in-4">Все бренды</label>
+                      </div>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-5">
+                        <label for="in-5">BRP</label>
+                      </div>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-6">
+                        <label for="in-6">K&N</label>
+                      </div>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-7">
+                        <label for="in-7">Kawasaki</label>
+                      </div>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-8">
+                        <label for="in-8">Motorex</label>
+                      </div>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-9">
+                        <label for="in-9">Motul</label>
+                      </div>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-10">
+                        <label for="in-10">Polaris</label>
+                      </div>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-11">
+                        <label for="in-11">XPS</label>
+                      </div>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-12">
+                        <label for="in-12">Yamaha</label>
+                      </div>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-13">
+                        <label for="in-13">Yamalube</label>
+                      </div>
+                      <div class="wr-checkbox">
+                        <input type="checkbox" id="in-14">
+                        <label for="in-14">Другое</label>
+                      </div>
+                    </div>
+                    <input type="submit" name="submitFilter" id="submitFilter" value="Применить фильтр" class="text-uppercase">
+                    <input type="reset" value="Очистить всё">
+                  </form>
+                </div>
+                <div class="col-lg-13 col-md-12 col-sm-11 col-xs-15">
+                  <div class="filtered-goods clearfix">
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                    <div class="card_product">
+                      <div class="content-product">
+                        <div class="img-product">
+                          <img src="images/page-catalog/product-1.jpg" alt="product" class="img-responsive">
+                        </div>
+                        <p class="name-product">
+                          Snowmobile Chain Case
+                        </p>
+                        <p class="price-product">
+                          $6
+                        </p>
+                      </div>
+                      <div class="in-basket">
+                        В корзину
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-15 hidden-sm hidden-xs">
+              <div class="row">
+                <div class="col-lg-6 col-md-7">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                      <img src="images/logo-small.png" alt="logo" class="logo-footer">
+                    </div>
+                    <div class="col-lg-12 col-md-11">
+                      <h2>Запчасти и аксессуары для мотоциклов, квадроциклов и снегоходов</h2> 
+                    </div>
+                    <div class="col-md-15">
+                      Наша компания оказывает полный спектр услуг по техническому обслуживанию мотоциклов, квадрациклов, снегоходов и гидроциклов. Мы предоставляем услуги по восстановлению работоспособности любого агрегата, в частности надёжные ремонтные работы капитального характера, возобновление полноценной работы топливной системы и электрооборудования, покраска и выполнение замены расходных материалов. 
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-4">
+                  <ul class="list-unstyled footer-menu footer-menu-left">
+                    <li>Покупателям:</li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Оптовые продажи</a></li>
+                    <li><a href="#">Сервисный центр</a></li>
+                    <li><a href="#">ОЕМ запчасти</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="list-unstyled footer-menu footer-menu-right">
+                    <li>Каталог продукции:</li>
+                    <li><a href="#">Запчасти</a></li>
+                    <li><a href="#">Расходники и масла</a></li>
+                    <li><a href="#">Экипировка</a></li>
+                    <li><a href="#">Аксессуары</a></li>
+                    <li><a href="#">Шины и диски</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-15 hidden-lg hidden-md">
+              <address class="address-footer">
+                <p class="phone">
+                  <span class="tel">+7 (423) 293-78-78</span>
+                  <a href="#" class="call-back">Перезвоните мне</a>
+                </p>
+                <p class="location">г. Владивосток, район «Снеговая», ул. Карьерная, 10А</p>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        2016  © «Elis Motors»
+      </div>
+    </footer>
+    
+  </div>
+<!-- SCRIPT -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
